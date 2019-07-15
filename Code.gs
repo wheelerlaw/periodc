@@ -24,6 +24,15 @@ function INAYEAR(interval) {
   return ratios[interval]
 }
 
+/**
+ * Converts a value from one period to another. 
+ *
+ * @param {number} value The value to change.
+ * @param {string} period1 The period to convert from.
+ * @param {string} period2 The period to convert to.
+ * @return The converted value.
+ * @customfunction
+ */
 function PERIODC(value, period1, period2){
   return value*INAYEAR(period1)/INAYEAR(period2)
 }
